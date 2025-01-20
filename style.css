@@ -1,4 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/*only for my reference:
+font-family: "Quicksand", serif;
+font-family: "Raleway", serif; */
 *{
   margin: 0;
   padding: 0;
 }
+body{
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 140px;
+  background-color: #f7f7f7; 
+}
+/* Shared styles starts here */
+.display-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Shared styles ends here */
+/* Menu bar styles starts here */
+.menu-bar{
+  justify-content: space-between;
+  height: 100px;
+}
+.menu-logo h1{
+  font-family: "Quicksand", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 10px;
+}
+.menu-item li{
+  list-style: none;
+}
+.menu-item li a{
+  text-decoration: none;
+  padding: 0 16px;
+  font-family: "Quicksand", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+#home a{
+  color: orange;
+}
+#about a{
+  color: skyblue;
+}
+#facilities a{
+  color: #05D4DF;
+}
+#admission a{
+  color: #5D58EF;
+}
+.contact button{
+  font-family: "Quicksand", serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  background: orange;
+  padding: 10px 60px;
+  border: none;
+  border-radius: 8px;
+}
+/* Menu bar styles ends here */
+
+/* Responsive styles starts here */
+@media screen and (max-width: 576px) {
+  .menu-logo h1, .menu-item{
+    display: none;
+  }
+}
+/* Responsive styles ends here */
+
