@@ -267,7 +267,7 @@ font-family: "Raleway", serif;
   margin-bottom: 35px;
 }
 .card-right h4{
-font-family: "Quicksand", serif;
+  font-family: "Quicksand", serif;
   font-size: 1rem;
   font-weight: 700;
   color: #000;
@@ -283,6 +283,63 @@ font-family: "Quicksand", serif;
   text-align: center;
 }
 /* Story area styles ends here */
+
+/* Footer area styles starts here */
+.footer-area{
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 140px;
+  background-color: #01ACFD;
+  justify-content: space-between;
+  gap: 100px;
+  font-family: "Quicksand", serif;
+  color: #fff;
+}
+.footer-title, .footer-menu, .footer-icon{
+  flex: 1;
+} 
+.footer-logo{
+  align-items: center;
+  margin-bottom: 35px;
+}
+.footer-logo h1{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 10px;
+}
+.footer-content p{
+  font-family: "Quicksand", serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+.footer-menu{
+  margin-left: 100px;
+}
+.footer-menu h3{
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+.footer-menu li{
+  list-style: none;
+  margin-bottom: 20px;
+}
+.footer-menu a{
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: #fff;
+  text-decoration: none;
+}
+.footer-icon h3{
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+.footer-icon-items{
+  margin-right: 10px;
+}
+/* Footer area styles ends here */
 
 /* Responsive styles starts here */
 @media screen and (max-width: 576px) {
@@ -332,7 +389,15 @@ font-family: "Quicksand", serif;
   .card-left{
     display: none;
   }
-
+/* Footer area */
+.footer-area{
+  flex-direction: column;
+  padding: 60px 30px;
+  gap: 50px;
+}
+.footer-menu{
+  margin-left: 0;
+}
 }
 /* Responsive styles ends here */
 
