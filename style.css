@@ -6,23 +6,26 @@ font-family: "Raleway", serif; */
   margin: 0;
   padding: 0;
 }
-body{
+.container{
   width: 1440px;
   margin: 0 auto;
-  padding: 0 140px;
   background-color: #f7f7f7; 
 }
 /* Shared styles starts here */
 .display-flex{
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 /* Shared styles ends here */
 /* Menu bar styles starts here */
 .menu-bar{
+  padding: 0 140px;
   justify-content: space-between;
+  align-items: center;
   height: 100px;
+  max-width: 1160px;
+}
+.menu-logo{
+  align-items: center;
 }
 .menu-logo h1{
   font-family: "Quicksand", serif;
@@ -60,14 +63,67 @@ body{
   background: orange;
   padding: 10px 60px;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 /* Menu bar styles ends here */
 
+/* Banner area styles starts here */
+.banner{
+  max-width: 1160px;
+  padding: 0 140px;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-content h1{
+  font-family: "Quicksand", serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #000;
+}
+#empower{
+  color: orange;
+}
+#vision{
+  color: skyblue;
+}
+.banner-content p{
+  font-family: "Quicksand", serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #000;
+  margin: 24px 0;
+}
+.primary-btn{
+  font-family: "Quicksand", serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  background: black;
+  padding: 10px 45px;
+  border: none;
+  border-radius: 12px;
+}
+.banner-image img{
+  width: 100%;
+}
+/* Banner area styles ends here */
+
+
+
 /* Responsive styles starts here */
 @media screen and (max-width: 576px) {
+  header{
+    border: 1px solid orange;
+  }
   .menu-logo h1, .menu-item{
     display: none;
+  }
+  .banner{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .banner-content{
+    padding: 20px 0;
   }
 }
 /* Responsive styles ends here */
