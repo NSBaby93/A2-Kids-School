@@ -65,6 +65,9 @@ font-family: "Raleway", serif; */
   border: none;
   border-radius: 12px;
 }
+.contact a{
+  display: none;
+}
 /* Menu bar styles ends here */
 
 /* Banner area styles starts here */
@@ -108,22 +111,118 @@ font-family: "Raleway", serif; */
 }
 /* Banner area styles ends here */
 
+/* Curriculumn area styles starts here */
+.curriculum{
+  background-image: url(assets/bg.png);
+  padding: 60px 140px;
+  text-align: center;
+}
+.curriculum-title h1{
+  font-family: "Quicksand", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+}
+.curriculum-card{
+  padding: 80px 0;
+  justify-content: space-between;
+  gap: 28px;
+}
+.kinder, .elementary, .middle{
+  flex: 1;
+  padding: 50px 40px;
+  border-radius: 18px;
 
+}
+.kinder h3, .elementary h3, .middle h3{
+  font-family: "Quicksand", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #202020;
+}
+.kinder p, .elementary p, .middle p{
+  font-family: "Raleway", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #808080;
+  line-height: 1.75rem;
+}
+.kinder a, .elementary a, .middle a{
+  font-family: "Quicksand", serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.kinder a{
+  color: #64C8FF;
+} 
+.elementary a{
+color: #F0AA00;
+} 
+.middle a{
+  color: #8700FF;
+}
+.curriculum-card img, .curriculum-card h3, .curriculum-card p{
+  margin-bottom: 30px;
+}
+.kinder{
+  background: linear-gradient(to bottom, #DEF5FF, #fff);
+}
+.elementary{
+  background: linear-gradient(to bottom, #FFF4DC, #fff);
+}
+.middle{
+  background: linear-gradient(to bottom, #EEE1FF, #fff);
+}
+.curriculum-btn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.curriculum-btn a{
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 17px 21px;
+  background-color: orange;
+  border-radius: 50%;
+}
+/* Curriculumn area styles ends here */
 
 /* Responsive styles starts here */
 @media screen and (max-width: 576px) {
+  .container{
+  width: 576px;
+  margin: 0 auto; 
+  }
   header{
     border: 1px solid orange;
   }
-  .menu-logo h1, .menu-item{
+  .menu-bar{
+  padding: 0 20px;
+  }
+  .menu-logo h1, .menu-item, .contact button{
     display: none;
+  }
+  .contact a{
+    display: block;
+    color: #000;
   }
   .banner{
     flex-direction: column-reverse;
     text-align: center;
+    padding: 0 20px;
   }
   .banner-content{
     padding: 20px 0;
+  }
+  .curriculum{
+  padding: 10px 20px;
+}
+  .curriculum-card{
+    flex-direction: column;
+  }
+  .curriculum-btn{
+    display: none;
   }
 }
 /* Responsive styles ends here */
