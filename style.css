@@ -114,6 +114,7 @@ font-family: "Raleway", serif; */
 /* Curriculumn area styles starts here */
 .curriculum{
   background-image: url(assets/bg.png);
+  max-width: 1160px;
   padding: 60px 140px;
   text-align: center;
 }
@@ -184,16 +185,112 @@ color: #F0AA00;
   font-size: 1.5rem;
   padding: 17px 21px;
   background-color: orange;
+  border: 2px solid orange;
   border-radius: 50%;
 }
+.curriculum-btn a:hover{
+  color: orange;
+  background-color: #fff;
+  border: 2px solid orange;
+}
 /* Curriculumn area styles ends here */
+/* Story area styles starts here */
+.story-area{
+  background: url(assets/bg.png), linear-gradient(to bottom, #fff, #F9DEAD);
+  padding: 60px 140px;  
+  max-width: 1160px;
+} 
+.story-area img{
+  width: 100%;
+}
+.story-title h1{
+  font-family: "Quicksand", serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+}
+.story-card{
+  padding: 80px 0;
+  justify-content: space-between;
+  gap: 20px;
+}
+.story-card button{
+  font-family: "Raleway", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 50px;
+  top: -30px;
+  position: relative;
+}
+.card-left button{
+  background-color: #3CD8E8;
+}
+.card-1 button, .card-3 button, .card-4 button{
+  background-color: #95B226;
+}
+.card-2 button{
+  background-color: #5D58F0;
+}
+.card-left, .card-right{
+  flex: 1;
+}
+.card-left, .card-1, .card-2, .card-3, .card-4{
+  background-color: #fff;
+  border-radius: 16px;
+}
+.story-card img{
+  border-radius: 16px 16px 0 0;
+}
+.card-left button, .card-left h3, .card-left p, .card-right button, .card-right h4, .card-right p{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.card-left h3{
+font-family: "Quicksand", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+  line-height: 2.25rem;
+  margin-bottom: 45px;
+}
+.card-left p{
+font-family: "Raleway", serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #666;
+  line-height: 1.75rem;
+  margin-bottom: 35px;
+}
+.card-right h4{
+font-family: "Quicksand", serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.75rem;
+  margin-bottom: 35px;
+}
+.card-right{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.story-btn{
+  text-align: center;
+}
+/* Story area styles ends here */
 
 /* Responsive styles starts here */
 @media screen and (max-width: 576px) {
   .container{
-  width: 576px;
+  max-width: 576px;
   margin: 0 auto; 
   }
+  /* Menu area */
   header{
     border: 1px solid orange;
   }
@@ -207,6 +304,7 @@ color: #F0AA00;
     display: block;
     color: #000;
   }
+  /* Banner area */
   .banner{
     flex-direction: column-reverse;
     text-align: center;
@@ -215,8 +313,10 @@ color: #F0AA00;
   .banner-content{
     padding: 20px 0;
   }
+  /* Curriculum area */
   .curriculum{
-  padding: 10px 20px;
+    max-width: 90%;
+    padding: 10px 20px;
 }
   .curriculum-card{
     flex-direction: column;
@@ -224,6 +324,15 @@ color: #F0AA00;
   .curriculum-btn{
     display: none;
   }
+  /* Story area */
+  .story-area{
+    padding: 40px 20px;
+    margin: 0 auto;
+  }
+  .card-left{
+    display: none;
+  }
+
 }
 /* Responsive styles ends here */
 
