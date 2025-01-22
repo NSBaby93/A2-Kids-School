@@ -96,6 +96,11 @@ font-family: "Raleway", serif; */
   padding: 10px 60px;
   border-radius: 12px;
 }
+.contact button a:hover{
+  background: skyblue;
+  color: orange;
+  transition: 1s;
+}
 .hide-bar{
   display: none;
 }
@@ -139,6 +144,11 @@ font-family: "Raleway", serif; */
   background: black;
   padding: 10px 45px;
   border-radius: 12px;
+}
+.primary-btn a:hover{
+  background: #fff;
+  color: #000;
+  border: 2px solid black;
 }
 .banner-image img{
   width: 100%;
@@ -400,7 +410,7 @@ font-family: "Raleway", serif;
   .banner{
     flex-direction: column-reverse;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 20px 50px;
   }
   .banner-content{
     padding: 20px 0;
@@ -424,7 +434,7 @@ font-family: "Raleway", serif;
   }
   /* Story area */
   .story-area{
-    padding: 40px 20px;
+    padding: 40px 20px 60px;
     margin: 0 auto;
   }
   .card-left{
