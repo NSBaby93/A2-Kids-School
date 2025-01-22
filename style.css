@@ -127,6 +127,9 @@ font-family: "Raleway", serif; */
   color: #000;
   margin: 24px 0;
 }
+.primary-btn{
+  border: none;
+}
 .primary-btn a{
   font-family: "Quicksand", serif;
   font-size: 1.25rem;
@@ -135,7 +138,6 @@ font-family: "Raleway", serif; */
   text-decoration: none;
   background: black;
   padding: 10px 45px;
-  border: none;
   border-radius: 12px;
 }
 .banner-image img{
@@ -143,7 +145,7 @@ font-family: "Raleway", serif; */
 }
 /* Banner area styles ends here */
 
-/* Curriculumn area styles starts here */
+/* Curriculum area styles starts here */
 .curriculum{
   background-image: url(assets/bg.png);
   max-width: 1160px;
@@ -226,7 +228,7 @@ color: #F0AA00;
   border: 2px solid orange;
   transition: 1s;
 }
-/* Curriculumn area styles ends here */
+/* Curriculum area styles ends here */
 /* Story area styles starts here */
 .story-area{
   background: url(assets/bg.png), linear-gradient(to bottom, #fff, #F9DEAD);
@@ -377,8 +379,8 @@ font-family: "Raleway", serif;
 /* Responsive styles starts here */
 @media screen and (max-width: 576px) {
   .container{
-  max-width: 576px;
-  margin: 0 auto; 
+    max-width: 100%;
+    margin: 0 auto; 
   }
   /* Menu area */
   header{
